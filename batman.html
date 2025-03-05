@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery and Survey Completion Message</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+      .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        section {
+            display: flex;
+            height: 50vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            margin-top: auto;
+        }
+        section img {
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity:.8;
+            transition:.5s ease;
+        }
+        section img:hover {
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+        body {
+            background-color: black; /* set the background color of the page to black */
+        }
+      .survey-message {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+      .logo {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+        }
+      .logo img {
+            width: 100%;
+            height: 100%;
+        }
+      .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="survey-message">
+            <div class="logo">
+               <img src="https://th.bing.com/th/id/OIP.LsHYJVVC2CHzqUXIAjpRJQHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7" alt="Xbox logo">
+            </div>
+            <div class="content">
+                <h1>Nunca te rindas</h1>
+                <p class="powered-by">Power your Dreams</p>
+            </div>
+        </div>
+        <section>
+            <img src="https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2015/04/mBtqGsN.jpg?resize=750%2C400&ssl=1" alt="Random image 1">
+            <img src="https://www.gamespot.com/a/uploads/original/1365/13658182/2559799-bak_sshot075.jpg" alt="Random image 2">
+            <img src="https://images.alphacoders.com/527/thumb-1920-527372.png" alt="Random image 3">
+            <img src="https://th.bing.com/th/id/R.ac4d675ff1fd2c9b315e074bb4a61096?rik=62mcbwH56nvCww&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f4%2f5%2f9%2f23291.jpg&ehk=I8IzRaAWRTuUw5ElYwjzxdx%2fII6ie54S%2fpfF2D%2f%2ffRQ%3d&risl=&pid=ImgRaw&r=0" alt="Random image 4">
+            <img src="https://th.bing.com/th/id/R.5462dd35c1d1b236048f4c1956654f0c?rik=vBQIQQFuY8FpHg&pid=ImgRaw&r=0" alt="Random image 5">
+        </section>
+    </div>
+</body>
+</html>
