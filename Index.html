@@ -58,6 +58,7 @@
             font-family: 'CustomFont', Arial, sans-serif;
             text-align: center;
             padding: 20px;
+            z-index: 1; /* Asegura que el texto esté por encima de la imagen */
         }
         .logo {
             position: absolute;
@@ -82,16 +83,28 @@
             margin-top: 10%;
         }
         .phrase {
-            font-size: 24px;
+            font-size: 20px; /* Tamaño de fuente más pequeño */
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
+            position: relative; /* Para permitir el uso de z-index */
+            z-index: 2; /* Asegura que el texto esté por encima de la imagen */
+        }
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px; /* Tamaño de fuente grande para el texto de fondo */
+            color: rgba(255, 255, 255, 0.1); /* Color blanco con opacidad */
+            z-index: 0; /* Asegura que el texto de fondo esté detrás */
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="survey-message">
+            <div class="background-text">La verdadera fuerza no proviene de lo que eres capaz de hacer, sino de lo que eres capaz de superar</div>
             <div class="phrase">La verdadera fuerza no proviene de lo que eres capaz de hacer, sino de lo que eres capaz de superar</div>
             <div class="logo">
                <img src="https://th.bing.com/th/id/OIP.LsHYJVVC2CHzqUXIAjpRJQHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7" alt="Xbox logo">
@@ -102,7 +115,7 @@
             <img src="https://www.gamespot.com/a/uploads/original/1365/13658182/2559799-bak_sshot075.jpg" alt="Random image 2">
             <img src="https://images.alphacoders.com/527/thumb-1920-527372.png" alt="Random image 3">
             <img src="https://th.bing.com/th/id/R.ac4d675ff1fd2c9b315e074bb4a61096?rik=62mcbwH56nvCww&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f4%2f5%2f9%2f23291.jpg&ehk=I8IzRaAWRTuUw5ElYwjzxdx%2fII6ie54S%2fpfF2D%2f%2ffRQ%3d&risl=&pid=ImgRaw&r=0" alt="Random image 4">
-            <img src="https://th.bing.com/th/id/R.5462dd35c1d1b236048f4c1956654f0c?rik=vBQIQQFuY8FpHg&pid=ImgRaw&r=0" alt="Random image 5">
+            <img src="https://th.bing.com/th/id/R.5462dd35c1d1b236048f4c1956654f0c?rik=vBQIQQFuY8FpHg&pid=ImgRaw&r=0            <img src="https://th.bing.com/th/id/R.5462dd35c1d1b236048f4c1956654f0c?rik=vBQIQQFuY8FpHg&pid=ImgRaw&r=0" alt="Random image 5">
         </section>
     </div>
 </body>
