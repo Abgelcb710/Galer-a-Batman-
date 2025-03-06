@@ -45,10 +45,11 @@
         }
         .survey-message {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
             width: 90%;
-            height: 40%;
+            height: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -58,16 +59,12 @@
             font-family: 'CustomFont', Arial, sans-serif;
             text-align: center;
             padding: 20px;
-            z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+            z-index: 1;
         }
         .logo {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             width: 200px;
             height: 200px;
-            opacity: 0.3; /* Baja la opacidad del logo */
+            margin-bottom: 20px;
         }
         .logo img {
             width: 100%;
@@ -88,21 +85,16 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
-            position: relative; /* Para permitir el uso de z-index */
-            z-index: 2; /* Asegura que el texto esté por encima de la imagen */
         }
-        
-        
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="survey-message">
-          
-            <div class="phrase">La verdadera fuerza no proviene de lo que eres capaz de hacer, sino de lo que eres capaz de superar</div>
             <div class="logo">
-               <img src="https://th.bing.com/th/id/OIP.LsHYJVVC2CHzqUXIAjpRJQHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7" alt="Xbox logo">
+               <img src="https://1000marcas.net/wp-content/uploads/2019/11/Batman-Logo-2016.png" alt="Batman logo">
             </div>
+            <div class="phrase">La verdadera fuerza no proviene de lo que eres capaz de hacer, sino de lo que eres capaz de superar</div>
         </div>
         <section>
             <img src="https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2015/04/mBtqGsN.jpg?resize=750%2C400&ssl=1" alt="Random image 1">
