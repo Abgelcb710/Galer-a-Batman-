@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery and Survey Completion Message</title>
     <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('batmfa__.ttf') format('truetype');
+        }
+
         html, body {
             height: 100%;
             margin: 0;
         }
-      .wrapper {
+        .wrapper {
             display: flex;
             flex-direction: column;
             height: 100%;
@@ -26,8 +31,8 @@
             width: 0;
             flex-grow: 1;
             object-fit: cover;
-            opacity:.8;
-            transition:.5s ease;
+            opacity: .8;
+            transition: .5s ease;
         }
         section img:hover {
             cursor: crosshair;
@@ -36,9 +41,9 @@
             filter: contrast(120%);
         }
         body {
-            background-color: black; /* set the background color of the page to black */
+            background-color: black;
         }
-      .survey-message {
+        .survey-message {
             position: absolute;
             top: 0;
             left: 0;
@@ -50,9 +55,11 @@
             justify-content: center;
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'CustomFont', Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
         }
-      .logo {
+        .logo {
             position: absolute;
             top: 30%;
             left: 50%;
@@ -60,11 +67,11 @@
             width: 200px;
             height: 200px;
         }
-      .logo img {
+        .logo img {
             width: 100%;
             height: 100%;
         }
-      .content {
+        .content {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -74,17 +81,20 @@
             box-sizing: border-box;
             margin-top: 10%;
         }
+        .phrase {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="survey-message">
+            <div class="phrase">La verdadera fuerza no proviene de lo que eres capaz de hacer, sino de lo que eres capaz de superar</div>
             <div class="logo">
                <img src="https://th.bing.com/th/id/OIP.LsHYJVVC2CHzqUXIAjpRJQHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7" alt="Xbox logo">
-            </div>
-            <div class="content">
-                <h1></h1>
-                <p class="powered-by">La verdadera fuerza no proviene de lo que eres capaz de hacer, sino de lo que eres capaz de superar</p>
             </div>
         </div>
         <section>
